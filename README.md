@@ -4,10 +4,11 @@ link--->  https://infoware-assignment.herokuapp.com/    --> HELLO WORLD
 A) For Website Owner:
 
 Add account  
+    //note --> provide unique email-ID
     method:"POST"                                                 
     ---> https://infoware-assignment.herokuapp.com/api/signup
-    //note --> provide unique email-ID
-        {
+
+    body:{
             "name":"Owner",
             "email":"Owner@gmail.com",
             "password":"password",
@@ -27,7 +28,6 @@ Add products
         }
 
 View Orders
-
     //note --> if End user, will show only that users orders
                if owner, will show all orders by all users
 
@@ -43,22 +43,23 @@ View Orders
 B)  For End Customers
 
 Add account
+    //note --> provide unique email-ID
+    
     method:"POST"                                                 
-        ---> https://infoware-assignment.herokuapp.com/api/signup
-        //note --> provide unique email-ID
-            body:{
-                "name":"endUser",
-                "email":"Enduser@gmail.com",
-                "password":"password",
-            }
+    ---> https://infoware-assignment.herokuapp.com/api/signup
+        body:{
+            "name":"endUser",
+            "email":"Enduser@gmail.com",
+            "password":"password",
+        }
 
 Login
     method: "POST"
-        --->https://infoware-assignment.herokuapp.com/api/signin
-            body:{
-                "email":"shershah@gmail.com",
-                "password":"password"
-            }
+    --->https://infoware-assignment.herokuapp.com/api/signin
+        body:{
+            "email":"shershah@gmail.com",
+            "password":"password"
+        }
 
 
 Browse Products
