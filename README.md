@@ -4,6 +4,7 @@ link--->  https://infoware-assignment.herokuapp.com/    --> HELLO WORLD
 A) For Website Owner:
 
 Add account  
+
     //note --> provide unique email-ID
     method:"POST"                                                 
     ---> https://infoware-assignment.herokuapp.com/api/signup
@@ -17,6 +18,7 @@ Add account
 
 
 Add products
+
     method:"GET"                                                              userID
     ---> https://infoware-assignment.herokuapp.com/api/addproduct/612155832f8e4e2654a634914
 
@@ -28,6 +30,7 @@ Add products
         }
 
 View Orders
+
     //note --> if End user, will show only that users orders
                if owner, will show all orders by all users
 
@@ -43,6 +46,7 @@ View Orders
 B)  For End Customers
 
 Add account
+
     //note --> provide unique email-ID
     
     method:"POST"                                                 
@@ -54,9 +58,10 @@ Add account
         }
 
 Login
+
     method: "POST"
     --->https://infoware-assignment.herokuapp.com/api/signin
-    
+
         body:{
             "email":"shershah@gmail.com",
             "password":"password"
@@ -64,6 +69,7 @@ Login
 
 
 Browse Products
+
     method:"GET"
     --->https://infoware-assignment.herokuapp.com/api/products
 
@@ -78,13 +84,14 @@ Order products(no payment integration)
     }
 
 View Orders
-//note --> if End user, will show only that users orders
+
+    //note --> if End user, will show only that users orders
                if owner, will show all orders by all users
 
-    method:"GET"                                                      userId  
-    ---> https://infoware-assignment.herokuapp.com/api/orders/612155832f8e4e2654a63491
+        method:"GET"                                                      userId  
+        ---> https://infoware-assignment.herokuapp.com/api/orders/612155832f8e4e2654a63491
 
-    Headers:{
-        Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxNTU4MzJmOGU0ZTI2NTRhNjM0OTEiLCJpYXQiOjE2Mjk1NzU5NjIsImV4cCI6MTYyOTc5MTk2Mn0.o74gzUabUZDUnr7nr2Y27d7skY1Lu7ow5i9kVxrLV7E
-    }
+        Headers:{
+            Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxNTU4MzJmOGU0ZTI2NTRhNjM0OTEiLCJpYXQiOjE2Mjk1NzU5NjIsImV4cCI6MTYyOTc5MTk2Mn0.o74gzUabUZDUnr7nr2Y27d7skY1Lu7ow5i9kVxrLV7E
+        }
 
